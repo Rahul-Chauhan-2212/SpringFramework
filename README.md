@@ -7,4 +7,5 @@ i)Setter Injection
 ii)Constructor Injection
 b)Bean LifeCycle
 c)Autowiring
+d)Stereotyping Annotation based config
 
