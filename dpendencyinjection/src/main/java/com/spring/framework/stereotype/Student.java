@@ -1,5 +1,7 @@
 package com.spring.framework.stereotype;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -16,17 +18,23 @@ public class Student {
 	@Autowired
 	private Address address;
 	
+	@Value("#{temp}")
+	private List<String> courses;
+	
 	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Student(int id, String name, Address address) {
+	
+	public Student(int id, String name, Address address, List<String> courses) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.address = address;
+		this.courses = courses;
 	}
+
 
 	public int getId() {
 		return id;
@@ -48,12 +56,24 @@ public class Student {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+	
+
+	public List<String> getCourses() {
+		return courses;
+	}
+
+
+	public void setCourses(List<String> courses) {
+		this.courses = courses;
+	}
+
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", address=" + address + "]";
+		return "Student [id=" + id + ", name=" + name + ", address=" + address + ", courses=" + courses + "]";
 	}
-	
+
+
 	
 
 }
