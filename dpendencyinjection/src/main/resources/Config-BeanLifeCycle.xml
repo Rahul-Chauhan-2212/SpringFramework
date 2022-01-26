@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config/>
+	<bean name="dprtmnt" class="com.spring.framework.lifecycle.Department" >
+		<constructor-arg value="1"  type="int"/>
+		<constructor-arg value="ECE" type="String"/>
+	</bean>
+
+
+	<bean name="student" class="com.spring.framework.lifecycle.Student" 
+	init-method = "init">
+		<constructor-arg value="123" />
+		<constructor-arg value="Rahul Chauhan" />
+		<constructor-arg>
+			<list>
+				<value>3/818</value>
+				<value>Sector 3</value>
+				<value>Vasundhara</value>
+				<value>Ghaziabad</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg>
+			<set>
+				<value>7037099102</value>
+				<value>7906840825</value>
+			</set>
+		</constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry key="1" value="Java" />
+				<entry key="2" value="Spring" />
+			</map>
+		</constructor-arg>
+		<constructor-arg>
+			<ref bean="dprtmnt" />
+		</constructor-arg>
+	</bean>
+
+</beans>

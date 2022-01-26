@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/beans/spring-context.xsd">
+	<bean name="dprtmnt"
+		class="com.spring.framework.si.Department">
+		<property name="departmentId" value="1" />
+		<property name="departmentName" value="ECE" />
+	</bean>
+
+
+	<bean name="student"
+		class="com.spring.framework.si.Student">
+		<property name="id" value="123" />
+		<property name="name" value="Rahul Chauhan" />
+		<property name="address">
+			<list>
+				<value>3/818</value>
+				<value>Sector 3</value>
+				<value>Vasundhara</value>
+				<value>Ghaziabad</value>
+			</list>
+		</property>
+		<property name="phones">
+			<set>
+				<value>7037099102</value>
+				<value>7906840825</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="1" value="Java" />
+				<entry key="2" value="Spring" />
+			</map>
+		</property>
+		<property name="department">
+			<ref bean="dprtmnt" />
+		</property>
+	</bean>
+
+</beans>

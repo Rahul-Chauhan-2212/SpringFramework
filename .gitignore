@@ -1,1 +1,6 @@
 *.class
+.metadata/*
+*.classpath
+*.project
+*.prefs
+*/target/*
