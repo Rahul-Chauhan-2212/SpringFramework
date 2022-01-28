@@ -12,3 +12,5 @@ e)Bean Scope - Singleton(Default), Prototype, Request, Session, GlobalSession, W
 f)Spring Expression Language
 g)Java Configuration(no XML)
 
+2. Spring MVC
+

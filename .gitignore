@@ -5,3 +5,5 @@
 *.prefs
 */target/*
 /.metadata/
+/*/.settings/
+Servers/
