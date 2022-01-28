@@ -13,4 +13,9 @@ f)Spring Expression Language
 g)Java Configuration(no XML)
 
 2. Spring MVC
+a)Configuring MVC Project
+i)Configure dispatcher servlet in web.xml
+ii)Spring config file for view resolver
+iii)create controller
+iv)Create View
 
