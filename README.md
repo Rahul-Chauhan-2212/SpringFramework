@@ -22,3 +22,5 @@ b)Passing Data from Controller to page
 i)via Model
 ii)via ModelAndView
 c)JSP Experssion Language and JSTL
+d)Sending data from view to controller
+i)RequestParam Class
