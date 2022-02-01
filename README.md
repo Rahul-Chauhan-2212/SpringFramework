@@ -18,7 +18,7 @@ i)Configure dispatcher servlet in web.xml
 ii)Spring config file for view resolver
 iii)create controller
 iv)Create View
-
 b)Passing Data from Controller to page
 i)via Model
 ii)via ModelAndView
+c)JSP Experssion Language and JSTL
