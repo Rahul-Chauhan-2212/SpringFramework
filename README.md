@@ -21,4 +21,4 @@ iv)Create View
 
 b)Passing Data from Controller to page
 i)via Model
-
+ii)via ModelAndView

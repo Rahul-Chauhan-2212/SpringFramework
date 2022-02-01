@@ -3,6 +3,7 @@ package com.spring.framework.springmvc;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
@@ -20,5 +21,15 @@ public class HomeController {
 		model.addAttribute("name", "Rahul Chauhan");
 		return "about";	
 	}
+	
+	@RequestMapping("/modelview")
+	public ModelAndView modelview(ModelAndView modelView) {
+		System.out.println("modelview Url method");
+		modelView.addObject("name", "Rahul Chauhan");
+		modelView.addObject("age", 26);
+		modelView.setViewName("modelview");
+		return modelView;	
+	}
+
 
 }
