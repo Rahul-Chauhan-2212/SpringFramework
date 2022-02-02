@@ -24,3 +24,4 @@ ii)via ModelAndView
 c)JSP Experssion Language and JSTL
 d)Sending data from view to controller
 i)RequestParam Class
+ii)ModelAttribute class

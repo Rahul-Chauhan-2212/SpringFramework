@@ -1,4 +1,4 @@
-package com.spring.framework.springmvc;
+package com.spring.framework.springmvc.controller;
 
 import java.util.Arrays;
 import java.util.List;
