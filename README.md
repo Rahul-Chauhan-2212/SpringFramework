@@ -26,3 +26,6 @@ d)Sending data from view to controller
 i)RequestParam Class
 ii)ModelAttribute class
 e)Spring MVC + Spring ORM Example
+f)Redirect in Spring MVC
+i)redirect prefix
+ii)redirect view
