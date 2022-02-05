@@ -18,22 +18,18 @@
 	<div class="container">
 		<div class="card mx-auto mt-5 bg-secondary" style="width: 50%;">
 			<div class="card-body py-5">
-				<form class="mt-3">
-                     <h3 class="text-center text-white" style="text-transform: uppercase;">My Search</h3>
+				<form action="search" class="mt-3">
+					<h3 class="text-center text-white"
+						style="text-transform: uppercase;">My Search</h3>
 					<div class="form-group">
 						<input type="text" name="querybox"
 							placeholder="Enter your keyword" class="form-control" />
-
 					</div>
 					<div class="container text-center">
-
 						<button class="btn btn-outline-light">Search</button>
 					</div>
-
 				</form>
-
 			</div>
-
 		</div>
 	</div>
 	<!-- Optional JavaScript; choose one of the two! -->
