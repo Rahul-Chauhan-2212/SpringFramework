@@ -68,6 +68,41 @@
 									<option>Old Student</option>
 								</select>
 							</div>
+							<div class="form-group">
+								<label for="address.line1">Address Line1</label> <input
+									type="text" class="form-control" id="address.line1"
+									name="address.line1">
+							</div>
+							<div class="form-group">
+								<label for="address.line2">Address Line2</label> <input
+									type="text" class="form-control" id="address.line2"
+									name="address.line2">
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="address.city">City</label> <input type="text"
+										class="form-control" id="address.city" name="address.city">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="address.state">State</label> <select
+										id="address.state" name="address.state" class="form-control">
+										<option selected>Uttar Pradesh</option>
+										<option>Delhi</option>
+										<option>Punjab</option>
+										<option>Haryana</option>
+									</select>
+								</div>
+								<div class="form-group col-md-2">
+									<label for="address.zipcode">Zip</label> <input type="text"
+										class="form-control" id="address.zipcode"
+										name="address.zipcode">
+								</div>
+								<div class="form-group col-md-2">
+									<label for="address.country">Country</label> <input type="text"
+										class="form-control" id="address.country"
+										name="address.country" value="India">
+								</div>
+							</div>
 							<div class="container text-center">
 								<button type="submit" class="btn btn-primary btn-center">Register</button>
 							</div>

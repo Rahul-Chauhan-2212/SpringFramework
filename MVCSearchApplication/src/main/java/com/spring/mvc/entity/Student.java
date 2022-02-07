@@ -15,6 +15,7 @@ public class Student {
 	private String gender;
 	private List<String> languages;
 	private String type;
+	private Address address;
 
 	public String getEmail() {
 		return email;
@@ -64,10 +65,18 @@ public class Student {
 		this.type = type;
 	}
 
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
 	@Override
 	public String toString() {
 		return "Student [email=" + email + ", name=" + name + ", dob=" + dob + ", gender=" + gender + ", languages="
-				+ languages + ", type=" + type + "]";
+				+ languages + ", type=" + type + ", address=" + address + "]";
 	}
 
 }

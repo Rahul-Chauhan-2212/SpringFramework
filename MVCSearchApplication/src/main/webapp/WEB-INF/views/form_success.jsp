@@ -24,6 +24,11 @@
 		</ul>
 	</h3>
 	<h3>Type is: ${student.type}</h3>
+	<h3>
+		Address is: ${student.address.line1}, ${student.address.line2} <br>
+		${student.address.city}, ${student.address.state},
+		${student.address.country}, ${student.address.zipcode}
+	</h3>
 
 
 </body>
