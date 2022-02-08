@@ -1,3 +1,5 @@
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,11 +13,14 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
 	integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
 	crossorigin="anonymous">
-
+<link rel="stylesheet" href="<c:url value="resources/css/style.css"/>">
+<script src="<c:url value="resources/js/script.js"/>"></script>
 <title>Hello, world!</title>
 </head>
 <body>
 	<div class="container">
+		<img alt="My Profile"
+			src="<c:url value="resources/images/rahul.jpg"/>">
 		<div class="card mx-auto mt-5 bg-secondary" style="width: 50%;">
 			<div class="card-body py-5">
 				<form action="search" class="mt-3">
