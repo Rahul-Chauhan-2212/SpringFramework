@@ -15,14 +15,16 @@
 <title>File Upload Form</title>
 </head>
 <body>
-
-	<form action="formUpload" method="post" enctype="multipart/form-data">
-		<div class="form-group">
-			<label for="exampleFormControlFile1">Upload Your File Her</label> <input
-				type="file" class="form-control-file" id="exampleFormControlFile1"
-				name="file">
-		</div>
-	</form>
+	<div class="container mt-4">
+		<form action="fileUpload" method="post" enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="exampleFormControlFile1">Upload Your File Here</label> <input
+					type="file" class="form-control-file" id="exampleFormControlFile1"
+					name="file">
+			</div>
+			<button type="submit" class="btn btn-primary btn-center">Upload</button>
+		</form>
+	</div>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
