@@ -5,6 +5,7 @@ import java.util.Date;
 
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -18,13 +19,14 @@ public class ComplexFormController {
 
 	@RequestMapping("/complexform")
 	public String form_view() {
-
 		return "complex_form";
 	}
 
 	@RequestMapping(path = "/handle", method = RequestMethod.POST)
-	public String handle(@ModelAttribute("student") Student student) {
-
+	public String handle(@ModelAttribute("student") Student student, BindingResult bindingResult) {
+		if (bindingResult.hasErrors()) {
+			return "complex_form";
+		}
 		System.out.println(student);
 		return "form_success";
 	}

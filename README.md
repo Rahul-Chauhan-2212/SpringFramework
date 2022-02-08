@@ -30,3 +30,4 @@ f)Redirect in Spring MVC
 i)redirect prefix
 ii)redirect view
 g)Data Binding Project Student Registration form
+h)Handling errors in Spring MVC 
