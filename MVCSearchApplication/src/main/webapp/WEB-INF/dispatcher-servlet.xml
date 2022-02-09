@@ -29,4 +29,11 @@
 	<bean name="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
 
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/handle" />
+			<bean class="com.spring.mvc.interceptors.FormInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
 </beans>
