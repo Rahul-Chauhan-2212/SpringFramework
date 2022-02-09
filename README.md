@@ -34,3 +34,4 @@ h)Handling errors in Spring MVC
 i)Binding of static resources like CSS, JS and Images
 j)File Upload in Spring MVC
 k)Path Variable in Spring MVC
+l)Exception Handling using @ExceptionHander and @ControllerAdvice
