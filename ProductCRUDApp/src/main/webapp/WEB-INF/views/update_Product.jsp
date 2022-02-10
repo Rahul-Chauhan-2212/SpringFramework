@@ -1,3 +1,4 @@
+<%@page isELIgnored="false"%>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
 
-<title>Add Product</title>
+<title>Update Product</title>
 </head>
 <body>
 	<div class="container mt-4">
@@ -20,27 +21,32 @@
 			<div class="col-md-6 offset-md-3">
 				<div class="card" style="background-color: silver;">
 					<div class="card-body">
-						<h1 class="text-center">Add Product Form</h1>
-						<form action="productAdd" method="post">
+						<h1 class="text-center">Update Product Form</h1>
+						<form action="/ProductCRUDApp/saveOrUpdate" method="post">
+							<div class="form-group">
+								<input type="hidden" class="form-control" id="id" name="id"
+									placeholder="Enter Product Id" value="${product.id}">
+							</div>
 							<div class="form-group">
 								<label for="name">Name</label> <input type="text"
 									class="form-control" id="name" name="name"
-									placeholder="Enter Product Name">
+									placeholder="Enter Product Name" value="${product.name}">
 							</div>
 							<div class="form-group">
 								<label for="description">Description</label> <input type="text"
 									class="form-control" id="description" name="description"
-									placeholder="Enter Product Description">
+									placeholder="Enter Product Description"
+									value="${product.description}">
 							</div>
 							<div class="form-group">
 								<label for="price">Price</label> <input type="text"
 									class="form-control" id="price" name="price"
-									placeholder="Enter Product Name">
+									placeholder="Enter Product Name" value="${product.price}">
 							</div>
 							<div class="container text-center">
 								<a href="${pageContext.request.contextPath}/"
 									class="btn btn-outline-danger">Back</a>
-								<button type="submit" class="btn btn-primary btn-center">Add</button>
+								<button type="submit" class="btn btn-primary btn-center">Update</button>
 							</div>
 						</form>
 					</div>

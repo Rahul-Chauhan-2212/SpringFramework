@@ -13,13 +13,18 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+	integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+	crossorigin="anonymous" />
+
 
 <title>Product CRUD Application</title>
 </head>
 <body>
 	<div class="container mt-4">
 		<h1 class="text-center">Product CRUD Application</h1>
-		<a href="addProduct" class="btn btn-primary btn-lg float-right">Add
+		<a href="saveOrUpdate" class="btn btn-primary btn-lg float-right">Add
 			Product</a>
 		<table class="table table-bordered p-4">
 			<caption>List of Products</caption>
@@ -39,14 +44,9 @@
 						<td>${element.name}</td>
 						<td>${element.description}</td>
 						<td>${element.price}</td>
-						<td>
-							<form action="">
-								<button type="submit" formaction="updateProduct"
-									class=" btn btn-primary">Update</button>
-								<button type="submit" formaction="deleteProduct"
-									class="btn btn-danger">Delete</button>
-							</form>
-						</td>
+						<td><a href="updateProduct/${element.id}"><i
+								class="fas fa-pen"></i></a> <a href="deleteProduct/${element.id}"><i
+								class="fas fa-trash text-danger"></i></a></td>
 					</tr>
 				</c:forEach>
 			</tbody>

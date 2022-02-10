@@ -17,8 +17,8 @@ public class ProductDao {
 	private HibernateTemplate hibernateTemplate;
 
 	@Transactional
-	public void createProduct(Product product) {
-		this.hibernateTemplate.save(product);
+	public void createOrUpdateProduct(Product product) {
+		this.hibernateTemplate.saveOrUpdate(product);
 	}
 
 	public List<Product> getAllProducts() {
@@ -28,21 +28,15 @@ public class ProductDao {
 	}
 
 	public Product getSingleProducts(int id) {
-		Product product = this.hibernateTemplate.load(Product.class, id);
+		Product product = this.hibernateTemplate.get(Product.class, id);
 		return product;
 
 	}
 
 	@Transactional
 	public void deleteProduct(int id) {
-		Product product = this.hibernateTemplate.load(Product.class, id);
+		Product product = this.hibernateTemplate.get(Product.class, id);
 		this.hibernateTemplate.delete(product);
-	} 
-
-	@Transactional
-	public void updateProduct(Product product) {
-		this.hibernateTemplate.update(product);
-		;
 	}
 
 }
