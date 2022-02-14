@@ -1,5 +1,7 @@
 package com.spring.jdbc;
 
+import java.util.List;
+
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -27,9 +29,18 @@ public class App {
 		 * updateRecord = studentDao.updateRecord(student);
 		 * System.out.println(updateRecord + " records updated");
 		 */
-		student.setId(3);
-		int deleteRecord = studentDao.deleteRecord(student);
-		System.out.println(deleteRecord + " records deleted");
+		/*
+		 * student.setId(3); int deleteRecord = studentDao.deleteRecord(student);
+		 * System.out.println(deleteRecord + " records deleted");
+		 */
+		/*
+		 * student.setId(1); Student singleRecord = studentDao.getSingleRecord(student);
+		 * System.out.println("Record selected is -->"+singleRecord);
+		 */
+		List<Student> allRecords = studentDao.getAllRecords();
+		for(Student s:allRecords) {
+			System.out.println(s);
+		}
 		context.close();
 
 	}

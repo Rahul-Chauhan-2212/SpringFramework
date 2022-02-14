@@ -41,3 +41,4 @@ m)MVC Interceptors Example
 3. Spring JDBC
 a)Spring JDBC Configuration
 b)Insert, Update and delete operation using JDBC Template
+c)Select using RowMapper
