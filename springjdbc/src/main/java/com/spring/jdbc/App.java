@@ -17,11 +17,19 @@ public class App {
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
 		StudentDao studentDao = (StudentDaoImpl) context.getBean("studentDao");
 		Student student = new Student();
+		/*
+		 * student.setId(3); student.setName("Pooja"); student.setAge(20); int
+		 * insertRecord = studentDao.insertRecord(student); System.out.println("Total "
+		 * + insertRecord + " records inserted..");
+		 */
+		/*
+		 * student.setId(1); student.setName("Rahul"); student.setAge(26); int
+		 * updateRecord = studentDao.updateRecord(student);
+		 * System.out.println(updateRecord + " records updated");
+		 */
 		student.setId(3);
-		student.setName("Pooja");
-		student.setAge(20);
-		int insertRecord = studentDao.insertRecord(student);
-		System.out.println("Total " + insertRecord + " records inserted..");
+		int deleteRecord = studentDao.deleteRecord(student);
+		System.out.println(deleteRecord + " records deleted");
 		context.close();
 
 	}
