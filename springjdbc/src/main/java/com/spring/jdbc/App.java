@@ -2,9 +2,10 @@ package com.spring.jdbc;
 
 import java.util.List;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.spring.jdbc.config.JdbcConfig;
 import com.spring.jdbc.dao.StudentDao;
 import com.spring.jdbc.dao.StudentDaoImpl;
 import com.spring.jdbc.entity.Student;
@@ -16,7 +17,8 @@ import com.spring.jdbc.entity.Student;
 public class App {
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
-		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
+		//AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
+		AbstractApplicationContext context = new AnnotationConfigApplicationContext(JdbcConfig.class);
 		StudentDao studentDao = (StudentDaoImpl) context.getBean("studentDao");
 		Student student = new Student();
 		/*
