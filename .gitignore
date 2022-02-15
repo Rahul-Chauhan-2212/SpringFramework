@@ -7,3 +7,9 @@
 /.metadata/
 /*/.settings/
 Servers/
+*.jar
+*.cmd
+/*/.gitignore
+/*/.mvn/*
+/*/mvnw
+
