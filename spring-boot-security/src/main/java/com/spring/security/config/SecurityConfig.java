@@ -9,6 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
 @Configuration
 @EnableWebSecurity
@@ -22,8 +23,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().antMatchers("/home/**").permitAll().anyRequest().authenticated().and().httpBasic();
-
+		// http.authorizeRequests().antMatchers("/home/**").permitAll().anyRequest().authenticated().and().httpBasic();
+		/*
+		 * http.csrf().disable().authorizeRequests().antMatchers("/home/**").hasRole(
+		 * "ADMIN").anyRequest().authenticated() .and().httpBasic();
+		 */
+		/*
+		 * http.csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()
+		 * ).and().authorizeRequests()
+		 * .antMatchers("/home/**").hasRole("ADMIN").anyRequest().authenticated().and().
+		 * httpBasic();
+		 */
+		http.csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()).and().authorizeRequests()
+				.antMatchers("/home/**").hasRole("ADMIN").anyRequest().authenticated().and().formLogin();
 	}
 
 	/*

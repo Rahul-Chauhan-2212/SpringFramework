@@ -48,3 +48,6 @@ c)Select using RowMapper
 a)Spring boot starter security. This enables a default login process of Springboot.
 b)In memory authentication, Security Configuration, Password Encoding
 c)AntMatchers
+d)Role Based Authentication
+e)CSRF Token
+f)Form Based Authentication
