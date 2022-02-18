@@ -51,3 +51,5 @@ c)AntMatchers
 d)Role Based Authentication
 e)CSRF Token
 f)Form Based Authentication
+g)Custom Form Authentication
+h)Database Authentication

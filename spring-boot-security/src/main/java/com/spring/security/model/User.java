@@ -1,20 +1,27 @@
 package com.spring.security.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class User {
 
+	@Id
 	private String username;
 	private String password;
 	private String email;
+	private String role;
 
 	public User() {
 		super();
 	}
 
-	public User(String username, String password, String email) {
+	public User(String username, String password, String email, String role) {
 		super();
 		this.username = username;
 		this.password = password;
 		this.email = email;
+		this.role = role;
 	}
 
 	public String getUsername() {
@@ -41,9 +48,17 @@ public class User {
 		this.email = email;
 	}
 
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
 	@Override
 	public String toString() {
-		return "User [username=" + username + ", password=" + password + ", email=" + email + "]";
+		return "User [username=" + username + ", password=" + password + ", email=" + email + ", role=" + role + "]";
 	}
 
 }
