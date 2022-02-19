@@ -53,3 +53,7 @@ e)CSRF Token
 f)Form Based Authentication
 g)Custom Form Authentication
 h)Database Authentication
+
+
+5. Spring Boot
+a)JSP in Spring Boot
