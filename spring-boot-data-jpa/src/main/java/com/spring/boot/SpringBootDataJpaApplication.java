@@ -26,14 +26,21 @@ public class SpringBootDataJpaApplication {
 		employee1.setName("Kiran");
 		employee1.setDepartment("Admin");
 		List<Employee> employees = Arrays.asList(employee, employee1);
-		// Iterable<Employee> emp = repo.saveAll(employees);
+		Iterable<Employee> emp = repo.saveAll(employees);
 		// Employee emp = repo.save(employee);
 		// emp.forEach(System.out::println);
-		//Optional<Employee> findById = repo.findById(1);
-		//Iterable<Employee> findAll = repo.findAll();
-		//findAll.forEach(System.out::println);
-		//System.out.println(findById.get());
-		repo.deleteById(1);
+		// Optional<Employee> findById = repo.findById(1);
+		// Iterable<Employee> findAll = repo.findAll();
+		// findAll.forEach(System.out::println);
+		// System.out.println(findById.get());
+		// repo.deleteById(1);
+		// List<Employee> findByName = repo.findByName("Rahul");
+		// findByName.forEach(System.out::println);
+		List<Employee> employeeByDeparment = repo.getEmployeeByDeparment("IT");
+		employeeByDeparment.forEach(e -> System.out.println(e));
+		System.out.println("--------------------------------------------");
+		List<Employee> allEmployees = repo.getAllEmployees();
+		allEmployees.forEach(e -> System.out.println(e));
 	}
 
 }

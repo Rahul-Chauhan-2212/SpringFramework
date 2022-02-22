@@ -58,3 +58,5 @@ h)Database Authentication
 5. Spring Boot
 a)JSP in Spring Boot
 b)Data JPA in Spring Boot
+i)JPQL
+ii)Native Queries
