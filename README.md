@@ -60,3 +60,5 @@ a)JSP in Spring Boot
 b)Data JPA in Spring Boot
 i)JPQL
 ii)Native Queries
+c)REST APIs
+Mapping Get,Post,Delete and Put
