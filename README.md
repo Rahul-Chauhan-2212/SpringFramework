@@ -64,3 +64,4 @@ c)REST APIs
 i)Mapping Get,Post,Delete and Put
 ii)Response Entity
 iii)Database action in REST API
+iv)Nested Objects in REST API

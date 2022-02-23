@@ -1,9 +1,11 @@
 package com.spring.boot.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Book {
@@ -13,16 +15,11 @@ public class Book {
 	private int id;
 	private String name;
 	private double price;
+	@OneToOne(cascade = CascadeType.ALL)
+	private Author author;
 
 	public Book() {
 		super();
-	}
-
-	public Book(int id, String name, double price) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.price = price;
 	}
 
 	public int getId() {
@@ -49,9 +46,17 @@ public class Book {
 		this.price = price;
 	}
 
+	public Author getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(Author author) {
+		this.author = author;
+	}
+
 	@Override
 	public String toString() {
-		return "Book [id=" + id + ", name=" + name + ", price=" + price + "]";
+		return "Book [id=" + id + ", name=" + name + ", price=" + price + ", author=" + author + "]";
 	}
 
 }
