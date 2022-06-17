@@ -1,5 +1,5 @@
 <i>
-### SpringFramework
+  <h1>SpringFramework</h1>
 
 <ol>
   <li><h3>Spring Core</h3>
@@ -49,9 +49,9 @@ m)MVC Interceptors Example
 
   <li><h3> Spring JDBC</h3>
   <ul>
-a)Spring JDBC Configuration
-b)Insert, Update and delete operation using JDBC Template
-c)Select using RowMapper
+    <li>Spring JDBC Configuration</li>
+    <li>Insert, Update and delete operation using JDBC Template</li>
+    <li>Select using RowMapper</li>
   </ul>
   </li>
 
@@ -72,15 +72,21 @@ h)Database Authentication
 
   <li><h3>Spring Boot</h3>
     <ul>
-a)JSP in Spring Boot
-b)Data JPA in Spring Boot
-i)JPQL
-ii)Native Queries
-c)REST APIs
-i)Mapping Get,Post,Delete and Put
-ii)Response Entity
-iii)Database action in REST API
-iv)Nested Objects in REST API
+      <li>JSP in Spring Boot</li>
+<li>Data JPA in Spring Boot
+  <ol>
+    <li>JPQL</li>
+    <li>Native Queries</li>
+  </ol>
+      </li>
+<li>REST APIs
+  <ol>
+    <li>Mapping Get,Post,Delete and Put</li>
+    <li>Response Entity</li>
+  </ol>
+      </li>
+      <li>Database action in REST API</li>
+      <li>Nested Objects in REST API</li>
       <ul>
   </li>
   </ol>
