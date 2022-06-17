@@ -1,8 +1,8 @@
 <i>
-# SpringFramework
+### SpringFramework
 
 <ol>
-<li>Spring Core
+  <li><h3>Spring Core</h3>
   <ul>
     <li>Dependency Injection</li>
     <ol>
@@ -15,10 +15,11 @@
     <li>Bean Scope - Singleton(Default), Prototype, Request, Session, GlobalSession, WebSocket</li>
     <li>Spring Expression Language</li>
     <li>Java Configuration(no XML)</li>
-    <ul>
-  </li>
+  </ul>
+</li>
 
-<li>Spring MVC
+  <li><h3>Spring MVC</h3>
+  <ul>
 a)Configuring MVC Project
 i)Configure dispatcher servlet in web.xml
 ii)Spring config file for view resolver
@@ -42,17 +43,21 @@ j)File Upload in Spring MVC
 k)Path Variable in Spring MVC
 l)Exception Handling using @ExceptionHander and @ControllerAdvice
 m)MVC Interceptors Example
+  </ul>
   </li>
 
 
-<li> Spring JDBC
+  <li><h3> Spring JDBC</h3>
+  <ul>
 a)Spring JDBC Configuration
 b)Insert, Update and delete operation using JDBC Template
 c)Select using RowMapper
+  </ul>
   </li>
 
 
-<li>Spring Security
+<li><h3>Spring Security</h3>
+  <ul>
 a)Spring boot starter security. This enables a default login process of Springboot.
 b)In memory authentication, Security Configuration, Password Encoding
 c)AntMatchers
@@ -61,10 +66,12 @@ e)CSRF Token
 f)Form Based Authentication
 g)Custom Form Authentication
 h)Database Authentication
+  </ul>
   </li>
 
 
-  <li>Spring Boot
+  <li><h3>Spring Boot</h3>
+    <ul>
 a)JSP in Spring Boot
 b)Data JPA in Spring Boot
 i)JPQL
@@ -74,6 +81,7 @@ i)Mapping Get,Post,Delete and Put
 ii)Response Entity
 iii)Database action in REST API
 iv)Nested Objects in REST API
+      <ul>
   </li>
   </ol>
   
