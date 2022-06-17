@@ -21,15 +21,17 @@
   <li><h3>Spring MVC</h3>
   <ul>
 <li>Configuring MVC Project
-i)Configure dispatcher servlet in web.xml
-ii)Spring config file for view resolver
-iii)create controller
+  <ol>
+    <li>Configure dispatcher servlet in web.xml</li>
+    <li>Spring config file for view resolver</li>
+    <li>create controller</li>
+  </ol>
 iv)Create View
     </li>
 <li>Passing Data from Controller to page
   <ol>
     <li>via Model</li>
-    </li>via ModelAndView</li>
+    <li>via ModelAndView</li>
   </ol>
   </li>
     <li>JSP Experssion Language and JSTL</li>
