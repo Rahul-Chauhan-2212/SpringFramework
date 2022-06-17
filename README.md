@@ -27,18 +27,24 @@ iii)create controller
 iv)Create View
     </li>
 <li>Passing Data from Controller to page
-i)via Model
-ii)via ModelAndView
-  <li>
+  <ol>
+    <li>via Model</li>
+    </li>via ModelAndView</li>
+  </ol>
+  </li>
     <li>JSP Experssion Language and JSTL</li>
 <li>Sending data from view to controller
-i)RequestParam Class
-ii)ModelAttribute class
+  <ol>
+    <li>RequestParam Class</li>
+    <li>ModelAttribute class</li>
+  </ol>
     </li>
     <li>Spring MVC + Spring ORM Example</li>
 <li>Redirect in Spring MVC
-i)redirect prefix
-ii)redirect view
+  <ol>
+    <li>redirect prefix</li>
+    <li>redirect view</li>
+  </ol>
     </li>
     <li>Data Binding Project Student Registration form</li>
     <li>Handling errors in Spring MVC</li>
