@@ -20,29 +20,33 @@
 
   <li><h3>Spring MVC</h3>
   <ul>
-a)Configuring MVC Project
+<li>Configuring MVC Project
 i)Configure dispatcher servlet in web.xml
 ii)Spring config file for view resolver
 iii)create controller
 iv)Create View
-b)Passing Data from Controller to page
+    </li>
+<li>Passing Data from Controller to page
 i)via Model
 ii)via ModelAndView
-c)JSP Experssion Language and JSTL
-d)Sending data from view to controller
+  <li>
+    <li>JSP Experssion Language and JSTL</li>
+<li>Sending data from view to controller
 i)RequestParam Class
 ii)ModelAttribute class
-e)Spring MVC + Spring ORM Example
-f)Redirect in Spring MVC
+    </li>
+    <li>Spring MVC + Spring ORM Example</li>
+<li>Redirect in Spring MVC
 i)redirect prefix
 ii)redirect view
-g)Data Binding Project Student Registration form
-h)Handling errors in Spring MVC 
-i)Binding of static resources like CSS, JS and Images
-j)File Upload in Spring MVC
-k)Path Variable in Spring MVC
-l)Exception Handling using @ExceptionHander and @ControllerAdvice
-m)MVC Interceptors Example
+    </li>
+    <li>Data Binding Project Student Registration form</li>
+    <li>Handling errors in Spring MVC</li>
+    <li>Binding of static resources like CSS, JS and Images</li>
+    <li>File Upload in Spring MVC</li>
+    <li>Path Variable in Spring MVC</li>
+    <li>Exception Handling using @ExceptionHander and @ControllerAdvice</li>
+    <li>MVC Interceptors Example</li>
   </ul>
   </li>
 
@@ -58,14 +62,14 @@ m)MVC Interceptors Example
 
 <li><h3>Spring Security</h3>
   <ul>
-a)Spring boot starter security. This enables a default login process of Springboot.
-b)In memory authentication, Security Configuration, Password Encoding
-c)AntMatchers
-d)Role Based Authentication
-e)CSRF Token
-f)Form Based Authentication
-g)Custom Form Authentication
-h)Database Authentication
+    <li>Spring boot starter security. This enables a default login process of Springboot.</li>
+    <li>In memory authentication, Security Configuration, Password Encoding</li>
+    <li>AntMatchers</li>
+    <li>Role Based Authentication</li>
+    <li>CSRF Token</li>
+    <li>Form Based Authentication</li>
+    <li>Custom Form Authentication</li>
+    <li>Database Authentication</li>
   </ul>
   </li>
 
