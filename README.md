@@ -1,5 +1,5 @@
 <i>
-  <h1>SpringFramework</h1>
+  <h1>Spring Framework</h1>
 
 <ol>
   <li><h3>Spring Core</h3>
