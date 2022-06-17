@@ -1,7 +1,9 @@
+<i>
 # SpringFramework
 Code Related to Spring Framework
 
-1. Spring Core
+<ol>
+<li>Spring Core
 a)Dependency Injection
 i)Setter Injection
 ii)Constructor Injection
@@ -11,8 +13,9 @@ d)Stereotyping Annotation based config
 e)Bean Scope - Singleton(Default), Prototype, Request, Session, GlobalSession, WebSocket
 f)Spring Expression Language
 g)Java Configuration(no XML)
+  </li>
 
-2. Spring MVC
+<li>Spring MVC
 a)Configuring MVC Project
 i)Configure dispatcher servlet in web.xml
 ii)Spring config file for view resolver
@@ -36,15 +39,17 @@ j)File Upload in Spring MVC
 k)Path Variable in Spring MVC
 l)Exception Handling using @ExceptionHander and @ControllerAdvice
 m)MVC Interceptors Example
+  </li>
 
 
-3. Spring JDBC
+<li> Spring JDBC
 a)Spring JDBC Configuration
 b)Insert, Update and delete operation using JDBC Template
 c)Select using RowMapper
+  </li>
 
 
-4. Spring Security
+<li>Spring Security
 a)Spring boot starter security. This enables a default login process of Springboot.
 b)In memory authentication, Security Configuration, Password Encoding
 c)AntMatchers
@@ -53,9 +58,10 @@ e)CSRF Token
 f)Form Based Authentication
 g)Custom Form Authentication
 h)Database Authentication
+  </li>
 
 
-5. Spring Boot
+  <li>Spring Boot
 a)JSP in Spring Boot
 b)Data JPA in Spring Boot
 i)JPQL
@@ -65,3 +71,7 @@ i)Mapping Get,Post,Delete and Put
 ii)Response Entity
 iii)Database action in REST API
 iv)Nested Objects in REST API
+  </li>
+  </ol>
+  
+</i>
