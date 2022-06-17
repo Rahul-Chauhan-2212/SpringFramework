@@ -25,8 +25,8 @@
     <li>Configure dispatcher servlet in web.xml</li>
     <li>Spring config file for view resolver</li>
     <li>create controller</li>
-  </ol>
-iv)Create View
+    <li>Create View</li>
+    </ol>
     </li>
 <li>Passing Data from Controller to page
   <ol>
